@@ -63,6 +63,7 @@ public class MainRain extends Game {
 		generateFont1();
 
 
+
 		menuScreen = new MainMenuScreen(this);
 		gameScreen = new GameScreen(this);
 		settingsScreen = new SettingsScreen(this);
@@ -79,7 +80,7 @@ public class MainRain extends Game {
 		}
 	}
 
-	void generateFont() {
+	void generateFont(){
 		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("shrift1.ttf"));
 		FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
 		parameter.size = 56;
@@ -91,7 +92,7 @@ public class MainRain extends Game {
 		generator.dispose();
 	}
 
-	void generateFontSett() {
+	void generateFontSett(){
 		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("shrift1.ttf"));
 		FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
 		parameter.size = 56;
@@ -103,7 +104,7 @@ public class MainRain extends Game {
 		generator.dispose();
 	}
 
-	void generateFont1() {
+	void generateFont1(){
 		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("shrift.ttf"));
 		FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
 		parameter.size = 28;
@@ -154,7 +155,6 @@ public class MainRain extends Game {
 
 		}
 	}
-
 	void saveChoosedMug() {
 		try {
 			Preferences pref = Gdx.app.getPreferences("savedChoosedMug");
@@ -174,7 +174,6 @@ public class MainRain extends Game {
 
 		}
 	}
-
 	void saveBuyingTrash() {
 		try {
 			Preferences pref = Gdx.app.getPreferences("savedBuyedTrash");
@@ -184,7 +183,6 @@ public class MainRain extends Game {
 
 		}
 	}
-
 	void saveChoosedBase() {
 		try {
 			Preferences pref = Gdx.app.getPreferences("savedChoosedBase");
@@ -254,7 +252,6 @@ public class MainRain extends Game {
 
 		}
 	}
-
 	void saveMission2() {
 		try {
 			Preferences pref = Gdx.app.getPreferences("saveMission2");

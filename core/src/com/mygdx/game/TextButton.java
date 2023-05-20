@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 
 public class TextButton {
-    float x, y; //Comment
+    float x, y;
     float width, height;
     String text;
     BitmapFont font;
